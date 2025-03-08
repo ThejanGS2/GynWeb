@@ -1,0 +1,315 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header / Nav */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
+}
+
+.main-header { /* Styles for the first header */
+    background-color: black;
+    color: white;
+    
+}
+
+.benefits-header { /* Styles for the second header */
+    background-color: #fefcdd;
+    color: black;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ff2600;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0433ff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url("hero.jpg") no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #ffffff;
+    background-color: #53d5fd;
+    padding: 0 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(170, 121, 66, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    background-color: #fffc41;
+    color: #000000;
+    padding: 12px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #ff2600;
+}
+
+/* Container for the Two-Column Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Text Column */
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info li {
+    margin-bottom: 10px;
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    background-color: #d60000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff2e2e;
+}
+
+/* Image Column */
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Brand / Instagram Section */
+.brand-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.brand-section img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.brand-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.brand-section p {
+    margin-bottom: 10px;
+}
+
+.brand-section a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .image-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* Benefits Section */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    color: #000000; /* Blue background for benefits section */
+    text-align: left;
+}
+
+/* Make benefits text content white */
+.benefit h2, 
+.benefit p {
+    color: #000000;
+}
+
+.benefit {
+    width: 30%;
+    text-align: left;
+}
+
+.benefit h2 {
+    margin-bottom: 15px;
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+    display: flex;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-form h1 {
+    text-align: center;
+}
+
+.contact-form .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .logo img {
+    max-width: 150px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #0433ff;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #0056d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app-info {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-info .app-screenshot {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.app-info .app-screenshot img {
+    max-width: 200px;
+}
+
+.image-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.image-section img {
+    max-width: 80%;
+}
